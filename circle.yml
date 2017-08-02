@@ -1,7 +1,7 @@
 machine:
   environment:
     PATH: "${PATH}:${HOME}/${CIRCLE_PROJECT_REPONAME}/node_modules/.bin"
-    COVERALLS_REPO_TOKEN: hNalmUHJN5pol8yfYF5plY5wFcFNL0DNw
+    COVERALLS_REPO_TOKEN: L1bzrVCKm7Zuy5kM2fDm3TkmCmlojZy19
     COVERALLS_SERVICE_JOB_ID: $CIRCLE_BUILD_NUM
   node:
     version: 6.9.4
