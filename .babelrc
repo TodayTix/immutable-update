@@ -1,0 +1,28 @@
+{
+  "presets": [["es2015", {"modules": false}]],
+  "env": {
+    "test": {
+      "presets": ["es2015"],
+      "plugins": [
+        [
+          "babel-plugin-espower",
+          {
+            "embedAst": true
+          }
+        ]
+      ]
+    },
+    "test:coverage": {
+      "presets": ["es2015"],
+      "plugins": [
+        [
+          "babel-plugin-espower",
+          {
+            "embedAst": true
+          }
+        ],
+        "istanbul"
+      ]
+    }
+  }
+}
