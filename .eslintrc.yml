@@ -5,9 +5,6 @@ parserOptions:
     jsx: true
 extends:
   - "eslint:recommended"
-  - "plugin:react/recommended"
-plugins:
-  - "react"
 env:
   browser: true
 rules:
@@ -53,20 +50,3 @@ rules:
       requireParamDescription: false
       requireReturnDescription: false
   yoda: "error"
-  react/no-string-refs: 0
-  react/jsx-filename-extension: 0
-  react/require-extension: 0
-  react/jsx-boolean-value:
-    - 2
-    - "always"
-  react/jsx-no-bind:
-    - 2
-    - allowArrowFunctions: true
-  react/sort-prop-types:
-    - 2
-    - callbacksLast: false
-      ignoreCase: true
-      requiredFirst: false
-  react/prefer-es6-class: "error"
-  react/prefer-stateless-function: "error"
-  react/display-name: 0

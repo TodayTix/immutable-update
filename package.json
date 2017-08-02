@@ -13,6 +13,7 @@
     "dist": "webpack --env dist",
     "dist:min": "webpack --env dist:min",
     "dist:modules": "rimraf ./dist-modules && babel ./src --out-dir ./dist-modules",
+    "lint": "eslint src",
     "prepublish": "npm run dist:all",
     "test": "NODE_ENV=test ava"
   },
