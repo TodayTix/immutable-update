@@ -30,10 +30,9 @@ export default function newState(state, newStateProps, overwrite = []) {
     assignWith(merged, state, (mergedVal, stateVal, key) => (
       newStateProps[key] === undefined ?
       // When we know this won't be merged/overridden, take the value from
-      // state. Otherwise, since merged is empty at this point, mergedVal is
-      // always undefined.
-      // It's left as undefined, so that the mergeWith call below can handle
-      // it as needed.
+      // state. Otherwise, it's left as undefined, so that the mergeWith call
+      // below can handle it as needed. (Since merged is empty at this point,
+      // mergedVal is always undefined).
       stateVal : mergedVal
     ));
   }
