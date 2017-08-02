@@ -21,7 +21,7 @@
             "embedAst": true
           }
         ],
-        "istanbul"
+        "babel-plugin-istanbul"
       ]
     }
   }

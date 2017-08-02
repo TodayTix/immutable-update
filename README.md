@@ -47,7 +47,6 @@ import immutableUpdate from 'immutable-update';
 function reducer(state, action) {
   switch (action.type) {
     case MY_ACTION: {
-
       return immutableUpdate(state, {
         subObject1: { myChange: 'newVal' },
         subObject2: { myOtherChange: 'otherNewVal' },
@@ -71,6 +70,8 @@ npm install --save immutable-update
 
 The `immutableState` function is exported as a UMD build, with the name in the
 global namespace being `immutableState` if you're not using any module system.
+
+### Override param
 
 The function also accepts an optional 3rd parameter of an array of paths to
 override, instead of merging.
